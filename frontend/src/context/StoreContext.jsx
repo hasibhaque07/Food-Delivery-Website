@@ -22,6 +22,7 @@ const StoreContextProvider = (props) => {
             await axios.post(url + "/api/cart/add", {itemId}, {headers: {token}});
         }
     }
+    
     const removeFromCart = async (itemId) => {
         setCartItems(prev => ({...prev, [itemId]: prev[itemId] - 1}))
     
@@ -50,6 +51,7 @@ const StoreContextProvider = (props) => {
         const response = await axios.post(url + "/api/cart/get", {}, {headers: {token}});
         setCartItems(response.data.cartData);
     }
+
     useEffect(() => {
         
         async function loadData(){
