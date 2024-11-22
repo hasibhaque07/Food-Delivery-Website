@@ -1,1 +1,1 @@
-This is a food delivery web app.
+I have used MERN stack to build this food delivery web app.
