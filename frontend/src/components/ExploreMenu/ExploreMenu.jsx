@@ -3,6 +3,7 @@ import './ExploreMenu.css'
 import { menu_list } from '../../assets/assets'
 
 const ExploreMenu = ({category, setCategory}) => {
+  
     useEffect(() => {
         const exploreMenuList = document.querySelector(".explore-menu-list");
 
